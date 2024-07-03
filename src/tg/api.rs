@@ -2,7 +2,7 @@ use reqwest::{Error, Response};
 
 use crate::tg::dto::{GetUpdatesQuery, SendMessageQuery, TgResponse, TgUpdate};
 
-const TG_BOT_TOKEN: &str = "7122843724:AAEfz-vE3Fy6JQ0KBjfTABBYmhr0pju5T2M";
+const TG_BOT_TOKEN: &str = "tg-bot-token";
 const TG_API_FORMAT: &str = "https://api.telegram.org/bot";
 const SEND_MESSAGE: &str = "sendMessage";
 const GET_UPDATES: &str = "getUpdates";
