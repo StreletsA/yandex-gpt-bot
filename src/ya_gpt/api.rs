@@ -2,12 +2,10 @@ use reqwest;
 
 use crate::ya_gpt::dto::{YaGPTCompletionOptions, YaGPTRequest, YaGPTRequestMessage, YaGPTResponse};
 
-const TOKEN: &str = "t1.9euelZrKkMmRksqQisuenJ6Nx5DMk-3rnpWaj5CVi5fJmImSlczKlMiTjpPl8_cAd1lM-e9XSSAZ_t3z90AlV0z571dJIBn-zef1656VmoyVi5zPi82VyI-bi5SOmsuL7_zF656VmoyVi5zPi82VyI-bi5SOmsuL.esST6o9vx4Rzg3L54cH2iFK-Tu_XMn-s4NunhkgXei0K2b3McctUz-13vBnfaBBe8ZGeFtz-hiSVRLxmKPDVDg";
+const TOKEN: &str = "ya-gpt-token";
 const CATALOG_TOKEN: &str = "b1gn4l28jnq32o2biaqp";
 const CLOUD_ID: &str = "b1gqtp43bmvupn90cgmg";
 
-
-// const LITE_MODEL_URI: &str = format!("gpt://{}/yandexgpt-lite/latest", CATALOG_TOKEN).as_str();
 const CHAT_URL: &str = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion";
 
 pub async fn send_prompt(prompt: String) -> Result<YaGPTResponse, String> {
